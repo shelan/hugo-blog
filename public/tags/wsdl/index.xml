@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wsdl on My blog is awesome</title>
+    <link>http://localhost:1313/tags/wsdl/</link>
+    <description>Recent content in Wsdl on My blog is awesome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Mon, 22 Apr 2013 10:07:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wsdl/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to disable automatic service creation with WSDL upload</title>
+      <link>http://localhost:1313/post/how-to-disable-automatic-service-creation-with-wsdl-upload/</link>
+      <pubDate>Mon, 22 Apr 2013 10:07:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/how-to-disable-automatic-service-creation-with-wsdl-upload/</guid>
+      <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;&lt;br /&gt;When you upload a WSDL to WSO2 Governance Registry it will create a Service Artifact automatically for that WSDL. But in case you do not want that to be automated and need to add services differently this is how to disable that feature.&lt;br /&gt;&lt;br /&gt;1) Open GREG_HOME/repository/conf/registry.xml&lt;br /&gt;&lt;br /&gt;2) Search for&amp;nbsp;&lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt; &lt;/span&gt;&lt;br /&gt;&lt;pre&gt;&lt;pre style=&#34;background-color: #eeeeee; border: 0px; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; font-size: 14px; line-height: 18px; margin-bottom: 10px; max-height: 600px; overflow: auto; padding: 5px; vertical-align: baseline; width: auto;&#34;&gt;&lt;code style=&#34;border: 0px; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; margin: 0px; padding: 0px; vertical-align: baseline;&#34;&gt;&amp;lt;property name=&#34;createService&#34;&amp;gt;false&amp;lt;/property&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/pre&gt;and uncomment them.&lt;br /&gt;&lt;br /&gt;There will be two locations generally for normal WSDL handler and for ZIP or archive based upload handler (Where you upload multiple WSDL files together).&lt;br /&gt;&lt;br /&gt;Save registry.xml and restart your server. Now you can observe that it will not create Services automatically for WSDL uploads.&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

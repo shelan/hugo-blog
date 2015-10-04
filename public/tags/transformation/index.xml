@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transformation on My blog is awesome</title>
+    <link>http://localhost:1313/tags/transformation/</link>
+    <description>Recent content in Transformation on My blog is awesome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Tue, 26 Mar 2013 22:07:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/transformation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to send CDATA inside your SOAP message payload</title>
+      <link>http://localhost:1313/post/how-to-send-cdata-inside-your-soap-message-payload/</link>
+      <pubDate>Tue, 26 Mar 2013 22:07:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/how-to-send-cdata-inside-your-soap-message-payload/</guid>
+      <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;&lt;span style=&#34;background-color: #ea9999;&#34;&gt;(Please note this a temporary workaround and this will be addressed properly in future releases)&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;If you need to send a SOAP message payload ever and if it resulted something like this.&lt;br /&gt;&lt;br /&gt;&lt;span style=&#34;color: #434343; font-family: Courier New, Courier, monospace; font-size: 13px; line-height: 19px;&#34;&gt;&lt;b&gt;&amp;amp;lt;task:customerSchema&amp;gt;&amp;amp;lt;ext:value&amp;gt;&amp;amp;amp;lt;maxStops&amp;gt;2&amp;amp;amp;lt;/maxStops&amp;gt;&amp;amp;lt;/ext:value&amp;gt;&amp;amp;lt;/task:customerSchema&amp;gt;&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;&lt;span style=&#34;color: #434343; font-family: Arial, Helvetica, Verdana, monospace, san-serif; font-size: 13px; line-height: 19px;&#34;&gt;&lt;br /&gt;&lt;/span&gt;Because  by default, a StAX parser must be in non coalescing mode (It overrides  the default settings mandated by the StAX specification) and as a side effect of that parser coaelsce CDATA sections. [1]&lt;span style=&#34;color: #434343; font-family: Arial, Helvetica, Verdana, monospace, san-serif; font-size: 13px; line-height: 19px;&#34;&gt;&lt;br /&gt;&lt;/span&gt;You need to add the&amp;nbsp;XMLInputFactory.properties file with the following entry to CARBON_HOME/ (root) folder.&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;/b&gt;&lt;br /&gt;&lt;pre&gt;&lt;b&gt;&lt;code&gt;javax.xml.stream.isCoalescing=false&lt;/code&gt;&lt;/b&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;For more information&lt;/div&gt;&lt;div&gt;[1] http://people.apache.org/~veithen/axiom/userguide/ch04.html#factory.properties&lt;br /&gt;&lt;br /&gt;[2]&amp;nbsp;http://wso2.org/forum/thread/10891&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

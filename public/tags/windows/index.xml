@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on My blog is awesome</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on My blog is awesome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Sun, 11 Mar 2012 22:37:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to change default temporary folder in WSO2 carbon based products</title>
+      <link>http://localhost:1313/post/how-to-change-default-temporary-folder-in-wso2-carbon-based-products/</link>
+      <pubDate>Sun, 11 Mar 2012 22:37:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/how-to-change-default-temporary-folder-in-wso2-carbon-based-products/</guid>
+      <description>&lt;p&gt;&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;In wso2 carbon based products default temporary folder is {product_home}/tmp.&lt;br /&gt;&lt;br /&gt;&amp;nbsp;If you need to change that location to a  different location here is the way to do it.&lt;br /&gt;&lt;br /&gt;&amp;nbsp;You can change the location by changing the locations in start up scripts.&lt;br /&gt;&lt;br /&gt;&amp;nbsp;1) In Linux (/bin/wso2server.sh) change following parameter&amp;rsquo;s location.&lt;br /&gt;&lt;br /&gt;&lt;pre class=&#34;brush:js;&#34;&gt;&lt;br /&gt;&amp;nbsp;-Djava.io.tmpdir=&amp;ldquo;$CARBON_HOME/tmp&amp;rdquo;&lt;br /&gt;&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt; &amp;nbsp;2) In Windows (/bin/wso2server.bat) change the following parameter&amp;rsquo;s location.&lt;br /&gt;&lt;pre class=&#34;brush:js;&#34;&gt;&lt;br /&gt;&amp;nbsp;-Djava.io.tmpdir=&amp;ldquo;%CARBON_HOME%\tmp&amp;rdquo;&lt;/div&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

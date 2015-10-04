@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>My blog is awesome &middot; </title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/poole-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/touch-icon-144-precomposed.png">
+  <link href="http://localhost:1313/favicon.png" rel="icon">
+
+  
+  
+  
+  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="My blog is awesome &middot; " />
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1></h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="http://localhost:1313/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      
+      
+      
+      
+      
+      
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2015 <a href="http://localhost:1313/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="posts">
+    
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="http://localhost:1313/post/adding-jms-transport-for-wso2-data-services-server/">Adding JMS transport for WSO2 Data Services Server</a>
+      </h1>
+      <span class="post-date">Mar 1, 2012 &middot; 1 minute read &middot; <a href="http://localhost:1313/post/adding-jms-transport-for-wso2-data-services-server/#disqus_thread">Comments</a>
+      </span>
+      
+      Pre requisites 1) WSO2 DataServices Server&nbsp;2) Apache ActiveMQ&nbsp; 1) Configuring JMS transport.After extracting Data Services Binary navigate to {DSS-HOME}/repository/confOpen axis2.xml in your editorUncomment the following sectionfor Transport Listner &lt;!--Uncomment this and configure as appropriate for JMS transport support, after setting up your JMS environment (e.g. ActiveMQ)--&gt; &lt;transportReceiver name="jms" class="org.apache.axis2.transport.jms.JMSListener"&gt; &lt;parameter name="myTopicConnectionFactory" locked="false"&gt; &lt;parameter name="java.naming.factory.initial" locked="false"&gt;org.apache.activemq.jndi.ActiveMQInitialContextFactory&lt;/parameter&gt; &lt;parameter name="java.naming.provider.url" locked="false"&gt;tcp://localhost:61616&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false"&gt;TopicConnectionFactory&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryType" locked="false"&gt;topic&lt;/parameter&gt; &lt;/parameter&gt; &lt;parameter name="myQueueConnectionFactory" locked="false"&gt; &lt;parameter name="java.naming.factory.initial" locked="false"&gt;org.apache.activemq.jndi.ActiveMQInitialContextFactory&lt;/parameter&gt; &lt;parameter name="java.naming.provider.url" locked="false"&gt;tcp://localhost:61616&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false"&gt;QueueConnectionFactory&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryType" locked="false"&gt;queue&lt;/parameter&gt; &lt;/parameter&gt; &lt;parameter name="default" locked="false"&gt; &lt;parameter name="java.naming.factory.initial" locked="false"&gt;org.apache.activemq.jndi.ActiveMQInitialContextFactory&lt;/parameter&gt; &lt;parameter name="java.naming.provider.url" locked="false"&gt;tcp://localhost:61616&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false"&gt;QueueConnectionFactory&lt;/parameter&gt; &lt;parameter name="transport.jms.ConnectionFactoryType" locked="false"&gt;queue&lt;/parameter&gt; &lt;/parameter&gt; &lt;/transportReceiver&gt;For Transport Sender &lt;!-- uncomment this and configure to use connection pools for sending messages--&gt; &lt;transportSender name="jms" class="org.apache.axis2.transport.jms.JMSSender"/&gt;Add the required jars to &lt;DSS_HOME&gt;/repository/components/lib folder.&nbsp;Start ActiveMQ using command "sh &lt;ActiveMQ_HOME&gt;/bin/activemq start" You can explore your ActiveMQ queues for services using JConsole.
+      <a href="http://localhost:1313/post/adding-jms-transport-for-wso2-data-services-server/">Read On &rarr;</a>
+      
+    </div>
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="http://localhost:1313/post/big-data--a-quick-introduction/">Big Data : A Quick introduction</a>
+      </h1>
+      <span class="post-date">Feb 24, 2012 &middot; 2 minute read &middot; <a href="http://localhost:1313/post/big-data--a-quick-introduction/#disqus_thread">Comments</a>
+      </span>
+      
+      What is Big data? This is one of the buzz words in today's world and has gained the attention of many industries. By looking at the name one might think it as data in "BIG" format. But there is much more than that. Today the rate of data generation is so huge and there are several&nbsp;dimensions&nbsp;that data evolves. Big data spans three dimensions: Volume, Velocity and Variety. " Volume – Big data comes in one size: large.
+      <a href="http://localhost:1313/post/big-data--a-quick-introduction/">Read On &rarr;</a>
+      
+    </div>
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="http://localhost:1313/post/how-to-kill-a-process-running-on-a-known-port/">How to kill a process running on a known port</a>
+      </h1>
+      <span class="post-date">Feb 19, 2012 &middot; 1 minute read &middot; <a href="http://localhost:1313/post/how-to-kill-a-process-running-on-a-known-port/#disqus_thread">Comments</a>
+      </span>
+      
+      If you know a process running on a specific port and need to kill the process ?here are the steps.1) Find the process ID. (Here which runs on 9443)?12345fuser -n tcp 9443orlsof -w -n -i tcp:9443Then you have the process ID. Kill the process with (Here ID =&nbsp;6147)?1kill -9 6147
+      
+      
+    </div>
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="http://localhost:1313/post/how-to-add-findbugs-and-checkstyle-plugins-to-your-maven3-build/">How to add Findbugs and Checkstyle plugins to your maven3 build</a>
+      </h1>
+      <span class="post-date">Jan 14, 2012 &middot; 2 minute read &middot; <a href="http://localhost:1313/post/how-to-add-findbugs-and-checkstyle-plugins-to-your-maven3-build/#disqus_thread">Comments</a>
+      </span>
+      
+      Findbugs and Checkstyle are two awesome tools that help to maintain the quality of your code discovering anti patterns or bad smells.Normally we can run those two tools with the help of IDE but there are possibilities that developers may be ignorant about them.So how about adding them to the normal maven build so developers are forced to correct their mistakes. There are different level of&nbsp;sympathetic&nbsp;levels that you can have&nbsp;&nbsp;with this integration.You can break the build if you find any Findbug&nbsp;violations&nbsp;and use SVN blame to find who broke the build&nbsp;&nbsp;.
+      <a href="http://localhost:1313/post/how-to-add-findbugs-and-checkstyle-plugins-to-your-maven3-build/">Read On &rarr;</a>
+      
+    </div>
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="http://localhost:1313/post/better-testing-with-testng/">Better testing with Testng</a>
+      </h1>
+      <span class="post-date">Dec 23, 2011 &middot; 3 minute read &middot; <a href="http://localhost:1313/post/better-testing-with-testng/#disqus_thread">Comments</a>
+      </span>
+      
+      Most of the programmers busy with&nbsp;writing&nbsp;code and forget the&nbsp;importance&nbsp;of having tested&nbsp;the implementations then and there.When you start writing tests you should select the best suitable framework for your job or else you will make things worse. There are few different tests such asUnit test&nbsp;: You have a clear narrow and well defined scope to check a single point of large story/ contractIntegration test&nbsp;: In this you will be checking inter operation with more than one sub systems and may expand across system&nbsp;boundaries.Smoke test/ sanity tests: This is a basic integration test for a product to verify system perform its basic&nbsp;functionality as expectedRegression test&nbsp;: Test to verify a fixed bug is actually fixed and it will not encounter againAcceptance test&nbsp;: This is also a form of integration test which carried out to verify a&nbsp;use case&nbsp;or a user storyOut of these tests JUnit is adequate to perform Unit tests but for integration tests it has some limitations.
+      <a href="http://localhost:1313/post/better-testing-with-testng/">Read On &rarr;</a>
+      
+    </div>
+    
+    
+    
+    <ul class="pagination">
+        
+        <li>
+            <a href="http://localhost:1313/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="http://localhost:1313/page/6/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="http://localhost:1313/">1</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/2/">2</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/3/">3</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/4/">4</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/5/">5</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/6/">6</a></li>
+        
+        <li
+        class="active"><a href="http://localhost:1313/page/7/">7</a></li>
+        
+        <li
+        ><a href="http://localhost:1313/page/8/">8</a></li>
+        
+        <li
+        >
+        <a href="http://localhost:1313/page/8/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="http://localhost:1313/page/8/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
+    
+  </div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "YOUR_SHORT_NAME_HERE";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+</body>
+</html>
+

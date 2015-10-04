@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysqld on My blog is awesome</title>
+    <link>http://localhost:1313/tags/mysqld/</link>
+    <description>Recent content in Mysqld on My blog is awesome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Sat, 25 Oct 2014 02:35:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mysqld/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to correct ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket /tmp/mysql.sock on Mac OS X</title>
+      <link>http://localhost:1313/post/how-to-correct-error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-tmpmysql.sock-2-on-mac-os-x/</link>
+      <pubDate>Sat, 25 Oct 2014 02:35:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/how-to-correct-error-2002-hy000-cant-connect-to-local-mysql-server-through-socket-tmpmysql.sock-2-on-mac-os-x/</guid>
+      <description>&lt;div dir=&#34;ltr&#34; style=&#34;text-align: left;&#34; trbidi=&#34;on&#34;&gt;&lt;br /&gt;I tried to install mysql using home-brew. Everything was successful But could not connect to the server. Obviously server have not started.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;background-color: black; color: whitesmoke; font-family: Monaco; font-size: 12px;&#34;&gt;ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket &#39;/tmp/mysql.sock&#39; (2)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Sigh..&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Following command rescued me..&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;pre class=&#34;lang-sql prettyprint prettyprinted&#34; style=&#34;background-color: #eeeeee; border: 0px; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; font-size: 14px; line-height: 17.804800033569336px; margin-bottom: 10px; max-height: 600px; overflow: auto; padding: 5px; vertical-align: baseline; width: auto; word-wrap: normal;&#34;&gt;&lt;code style=&#34;border: 0px; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; margin: 0px; padding: 0px; vertical-align: baseline; white-space: inherit;&#34;&gt;&lt;span class=&#34;pln&#34; style=&#34;background-color: transparent; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;&#34;&gt;mysqld stop&lt;br /&gt;mysql&lt;/span&gt;&lt;span class=&#34;pun&#34; style=&#34;background-color: transparent; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;pln&#34; style=&#34;background-color: transparent; border: 0px; margin: 0px; padding: 0px; vertical-align: baseline;&#34;&gt;server start&lt;/span&gt;&lt;span class=&#34;kwd&#34; style=&#34;background-color: transparent; border: 0px; color: darkblue; margin: 0px; padding: 0px; vertical-align: baseline;&#34;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;I found it in this stack overflow answer.&lt;/div&gt;&lt;div&gt;&lt;a href=&#34;http://stackoverflow.com/questions/15016376/cant-connect-to-local-mysql-server-through-socket-homebrew&#34; target=&#34;_blank&#34;&gt;http://stackoverflow.com/questions/15016376/cant-connect-to-local-mysql-server-through-socket-homebrew&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
